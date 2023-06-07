@@ -165,6 +165,10 @@ namespace glm
 	GLM_FUNC_DECL mat<4, 4, T, Q> lookAt(
 		vec<3, T, Q> const& eye, vec<3, T, Q> const& center, vec<3, T, Q> const& up);
 
+	template<typename T, qualifier Q>
+	GLM_FUNC_DECL mat<4, 4, T, Q> lookTo(
+		vec<3, T, Q> const& eye, vec<3, T, Q> const& center, vec<3, T, Q> const& up);
+
 	/// @}
 }//namespace glm
 
